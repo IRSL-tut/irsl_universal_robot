@@ -16,7 +16,7 @@
 
 - Required .deb (merged from 3 sites)
 ```
-sudo apt install bc bison build-essential ca-certificates curl dwarves flex gawk gnupg2 kernel-package libelf-dev libncurses-dev libssl-dev lsb-release wget zstd
+sudo apt install bc bison build-essential ca-certificates curl dwarves flex gawk gnupg2 kernel-package libelf-dev liblz4-tool libncurses-dev libssl-dev lsb-release wget zstd
 ```
 
 - Error related to pem file
