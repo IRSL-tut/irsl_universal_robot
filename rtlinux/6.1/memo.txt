@@ -1,0 +1,5 @@
+linux-6.1.33.tar.xz
+patch-6.1.33-rt11.patch.xz
+
+ubuntu: 6.2.0-23.23_amd64-config.flavour.generic
+

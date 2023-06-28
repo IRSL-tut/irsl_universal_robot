@@ -1,0 +1,4 @@
+linux-5.10.184.tar.xz
+patch-5.10.184-rt90.patch.xz
+
+ubuntu: 5.11.0-44.48_amd64-config.flavour.generic

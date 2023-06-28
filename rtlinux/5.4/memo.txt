@@ -1,0 +1,4 @@
+linux-5.4.242.tar
+patch-5.4.242-rt81.patch
+
+ubuntu: 5.4.0-152.169_amd64-config.flavour.generic

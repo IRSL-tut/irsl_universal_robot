@@ -1,0 +1,3 @@
+linux-4.19.284.tar
+patch-4.19.284-rt125.patch
+ubuntu: 4.18.0-25.26_amd64-config.flavour.generic

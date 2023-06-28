@@ -1,0 +1,4 @@
+linux-5.15.113.tar.xz
+patch-5.15.113-rt64.patch.xz
+
+ubuntu: amd64-config.flavour.generic ??
