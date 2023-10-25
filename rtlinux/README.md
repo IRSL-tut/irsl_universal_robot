@@ -3,8 +3,8 @@
 ## build
 
 - Read memo.txt
-- Download linux-x.y.z.tar.xz
-- Download patch-x.y.z-rt???.patch.xz
+- Download linux-x.y.z.tar.xz ( https://mirrors.edge.kernel.org/pub/linux/kernel/ )
+- Download patch-x.y.z-rt???.patch.xz ( https://cdn.kernel.org/pub/linux/kernel/projects/rt/ )
 
 - tar xz linux-x.y.z.tar.xz
 - cd linux-x.y.z
