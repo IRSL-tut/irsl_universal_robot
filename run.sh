@@ -1,1 +1,1 @@
-irsl_docker/run.sh
+.irsl_docker/run.sh
