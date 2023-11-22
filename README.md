@@ -1,5 +1,25 @@
 # irsl_universal_robot
 
+## Build Docker
+
+```
+(cd docker; ./build.sh)
+```
+
+## Run Docker
+
+```
+./run.sh jupyter
+```
+
+```
+./run.sh choreonoid-console
+```
+
+```
+./run.sh
+```
+
 ## Compiling real-time kernel on Ubuntu
 
 ### https://github.com/UniversalRobots/Universal_Robots_ROS_Driver/blob/master/ur_robot_driver/doc/real_time.md
