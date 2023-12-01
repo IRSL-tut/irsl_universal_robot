@@ -8,10 +8,11 @@ find_package(catkin REQUIRED)
 
 catkin_package()
 
-install(FILES ur5e_robot.body ur5e.urdf
+install(DIRECTORY model
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
- )
-install(DIRECTORY meshes
+  USE_SOURCE_PERMISSIONS
+)
+install(DIRECTORY launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
   USE_SOURCE_PERMISSIONS
 )

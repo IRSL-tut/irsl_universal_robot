@@ -62,3 +62,13 @@ CONFIG_DEBUG_INFO_BTF_MODULES=y
 CONFIG_DEBUG_INFO_BTF=n
 CONFIG_DEBUG_INFO_BTF_MODULES=n
 ```
+
+## convert robot model
+
+```
+# jupyter console --kernel=choreonoid
+exec(open('/choreonoid_ws/install/share/irsl_choreonoid/sample/irsl_import.py').read())
+
+rb = iu.loadRobot('ur5e_body/ur5e.urdf')
+iu.exportBody('/tmp/hoge.body', rb, extModelFileMode=2, fileUri='file:///tmp', allInOne=True, fixMassParam=True)
+```
