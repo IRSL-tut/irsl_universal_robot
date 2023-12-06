@@ -6,18 +6,38 @@
 (cd docker; ./build.sh)
 ```
 
-## Run Docker
+## Run Docker (simulation)
+
+```
+./run.sh bash ./run_sim.sh
+```
+
+## Exec Docker (with simulation)
+
+```
+./exec.sh run_jupyter.sh
+```
+
+```
+./exec.sh choreonoid_console.sh
+```
+
+## Run Docker (no simulation)
 
 ```
 ./run.sh jupyter
 ```
 
 ```
-./run.sh choreonoid-console
+./run.sh
 ```
 
+## Python Scripts
+
 ```
-./run.sh
+exec(open('/choreonoid_ws/install/share/irsl_choreonoid/sample/irsl_import.py').read())
+ri = RobotInterface('package://ur5e_robot/model/ur5e_robotinterface.yaml')
+robot = ri.getRobotModel()
 ```
 
 ## Compiling real-time kernel on Ubuntu

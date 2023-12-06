@@ -7,8 +7,10 @@ robot_model:
 joint_groups:
   -
     name: default
-    topic: /ur5e/trajectory_controller/command
+    #topic: /ur5e/trajectory_controller/command
+    #type: command
     # type: 'action' or 'command'
+    topic: /ur5e/trajectory_controller/follow_joint_trajectory
     type: action
     joint_names: ['shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint', 'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint']
 #  -

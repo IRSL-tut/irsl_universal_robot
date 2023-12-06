@@ -29,7 +29,7 @@ world:
       robot: *rbmodel
       name_space: 'ur5e'
       controllers:
-        - name: 'pos_controller'
+        - name: 'trajectory_controller'
           type: 'position'
           joints: 'all'
 #  ROS: ## WIP
