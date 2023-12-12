@@ -303,3 +303,13 @@ links:
       1e-09, 0, 0, 
       0, 1e-09, 0, 
       0, 0, 1e-09 ]
+#### added gripper
+  - 
+    name: "gripper"
+    parent: tool0
+    joint_type: fixed
+    translation: [ -0.01425, 0.015, 0.02 ]
+    rotation: [0, -1, 0, 90 ]
+    type: SubBody
+    jointIdOffset: 6
+    uri: "simple_gripper.body"

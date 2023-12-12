@@ -13,22 +13,17 @@ joint_groups:
     topic: /ur5e/trajectory_controller/follow_joint_trajectory
     type: action
     joint_names: ['shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint', 'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint']
-#  -
-#    name: gripper
-#    topic: /ur5/gripper_controller/command
-#    # type: 'action' or 'command'
-#    type: command
-#    joint_names: ['gear', 'rack_part_1', 'rack_part_2' ]
-#  -
-#    name: wholebody
-#    type: combined
-#    groups: ['default', 'gripper']
+  -
+    name: gripper
+    topic: /ur5/gripper_controller/command
+    type: command
+    joint_names: ['finger_joint0' ]
+  -
+    name: wholebody
+    type: combined
+    groups: ['default', 'gripper']
 devices:
   -
     topic: /ur5e/joint_states
     class: JointState
     name: joint_state
-#  -
-#    topic: /kohaku_leftarm/state
-#    class: JointTrajectoryState
-#    name: leftarm_state

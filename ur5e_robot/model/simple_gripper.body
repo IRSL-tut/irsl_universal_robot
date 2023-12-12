@@ -1,0 +1,138 @@
+format: ChoreonoidBody
+format_version: 2.0
+angle_unit: degree
+name: "simple_gripper"
+root_link: "ROOT_FRAME"
+links: 
+  - 
+    name: "ROOT_FRAME"
+    elements: 
+      - 
+        type: Transform
+        elements: 
+          - 
+            type: Transform
+            rotation: [ 0.57735026919, 0.57735026919, 0.57735026919, 120 ]
+            translation: [ -2.6645352591e-18, -0.012, -0.017 ]
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.21, 0.21, 0.21 ]
+                    emissive: [ 0.09, 0.09, 0.09 ]
+                geometry: 
+                  type: Box
+                  size: [ 0.0465, 0.034, 0.0285 ]
+          - 
+            type: Transform
+            translation: [ 0.09, -0.0325, -0.015 ]
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.28, 0.56, 0.56 ]
+                    emissive: [ 0.12, 0.24, 0.24 ]
+                geometry: 
+                  type: Box
+                  size: [ 0.04, 0.005, 0.03 ]
+          - 
+            type: Transform
+            rotation: [ 0, 0, 1, 17.1887338539 ]
+            translation: [ 0.0516320707341, -0.038298745356, -0.015 ]
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.28, 0.56, 0.56 ]
+                    emissive: [ 0.12, 0.24, 0.24 ]
+                geometry: 
+                  type: Box
+                  size: [ 0.04, 0.005, 0.03 ]
+          - 
+            type: Transform
+            translation: [ 0.011, -0.044, -0.015 ]
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.28, 0.56, 0.56 ]
+                    emissive: [ 0.12, 0.24, 0.24 ]
+                geometry: 
+                  type: Box
+                  size: [ 0.05, 0.005, 0.03 ]
+    joint_name: ROOT_FRAME
+    joint_type: free
+    mass: 0.0322793
+    center_of_mass: [ 0.014441, -0.020067, -0.0163959 ]
+    inertia: [ 
+      1.14726e-05, 7.27935e-06, -6.50692e-07, 
+      7.27935e-06, 3.42038e-05, 3.63486e-07, 
+      -6.50692e-07, 3.63486e-07, 3.64931e-05 ]
+  - 
+    name: "FINGER0"
+    elements: 
+      - 
+        type: Transform
+        rotation: [ -0.57735026919, -0.57735026919, -0.57735026919, 120 ]
+        elements: 
+          - 
+            type: Transform
+            translation: [ 0.085, 0.0025, -0.015 ]
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.28, 0.56, 0.56 ]
+                    emissive: [ 0.12, 0.24, 0.24 ]
+                geometry: 
+                  type: Box
+                  size: [ 0.03, 0.005, 0.03 ]
+          - 
+            type: Transform
+            rotation: [ 0, 0, 1, 17.1887338539 ]
+            translation: [ 0.104037881929, 0.00386594225612, -0.015 ]
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.28, 0.56, 0.56 ]
+                    emissive: [ 0.12, 0.24, 0.24 ]
+                geometry: 
+                  type: Box
+                  size: [ 0.01, 0.005, 0.03 ]
+          - 
+            type: Transform
+            rotation: [ 0, 0, -1, 17.1887338539 ]
+            translation: [ 0.0468553882885, 0.00977634638935, -0.015 ]
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.28, 0.56, 0.56 ]
+                    emissive: [ 0.12, 0.24, 0.24 ]
+                geometry: 
+                  type: Box
+                  size: [ 0.05, 0.005, 0.03 ]
+    parent: ROOT_FRAME
+    rotation: [ 0.57735, 0.57735, 0.57735, 120 ]
+    joint_name: finger_joint0
+    joint_type: revolute
+    joint_axis: [ 0, 1, 0 ]
+    joint_id: 0
+    joint_range: [ -180, 180 ]
+    max_joint_velocity: 1800
+    max_joint_effort: 100
+    joint_axis_inertia: 0.05
+    mass: 0.0054
+    center_of_mass: [ 0.00669419, -0.015, 0.0659239 ]
+    inertia: [ 
+      3.41523e-06, 1.31279e-07, 3.8501e-07, 
+      1.31279e-07, 3.13337e-06, 4.02419e-23, 
+      3.8501e-07, 4.02419e-23, 1.23496e-06 ]
