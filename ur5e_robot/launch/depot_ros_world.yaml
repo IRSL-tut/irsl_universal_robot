@@ -33,8 +33,10 @@ world:
           type: 'position'
           joints: ['shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint', 'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint']
         - name: 'gripper_controller'
-          type: 'effort'
+          # type: 'effort' ## TODO
+          type: 'position'
           joints: [ 'finger_joint0' ]
+          gains: { 'finger_joint0': {p: 50, d: 1} } ## TODO parse gains
 #  ROS: ## WIP
 #     urdf_settings:
 #          file: <file>
