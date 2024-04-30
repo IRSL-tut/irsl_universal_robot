@@ -7,10 +7,9 @@ robot:
   fix: True
   BodyROSItem:
     name_space: 'ur5e'
+    joint_state_publication: False
   ROSControlItem:
     name_space: 'ur5e'
-    joint_state_publication: False
-
 world:
   World:
     name: 'UniversalRobotWorld'
