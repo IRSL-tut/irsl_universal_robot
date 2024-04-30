@@ -15,7 +15,7 @@ joint_groups:
     joint_names: ['shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint', 'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint']
   -
     name: gripper
-    topic: /ur5/gripper_controller/command
+    topic: /ur5e/gripper_controller/command
     type: command
     joint_names: ['finger_joint0' ]
   -
