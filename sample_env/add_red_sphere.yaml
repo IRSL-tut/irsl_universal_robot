@@ -1,0 +1,5 @@
+objects:
+  - model: /userdir/sample_env/red_sphere.body
+    name: MyShpere
+    initial_coords: { pos: [-2.4, -0.4, 0.8], aa: [1, 0, 0, 0] }
+    fix: false

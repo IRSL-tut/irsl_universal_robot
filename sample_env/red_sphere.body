@@ -1,0 +1,32 @@
+format: ChoreonoidBody
+format_version: 2.0
+angle_unit: degree
+name: "BodyBuilder"
+root_link: "Root"
+links: 
+  - 
+    name: "Root"
+    elements: 
+      - 
+        type: Transform
+        elements: 
+          - 
+            type: Transform
+            elements: 
+              - 
+                type: Shape
+                appearance: 
+                  material: 
+                    diffuse: [ 0.7, 0, 0 ]
+                    emissive: [ 0.3, 0, 0 ]
+                geometry: 
+                  type: Sphere
+                  radius: 0.05
+    joint_name: Root
+    joint_type: free
+    mass: 0.523599
+    center_of_mass: [ 0, 0, 0 ]
+    inertia: [ 
+      0.000523599, 0, 0, 
+      0, 0.000523599, 0, 
+      0, 0, 0.000523599 ]
