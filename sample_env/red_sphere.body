@@ -1,3 +1,14 @@
+## ライブラリのインポート
+#exec(open('/choreonoid_ws/install/share/irsl_choreonoid/sample/irsl_import.py').read())
+## ロボットビルダーの作成
+#rb=RobotBuilder()
+### 半径0.05[m]の赤い球を作成 
+#rb.makeSphere(0.05, color=[1.0, 0, 0])
+## LINKの作成
+#rb.createLinkFromShape(name='Root', root=True, density=1000.0)
+## bodyへエクスポート
+#rb.exportBody('/userdir/red_sphere.body')
+####
 format: ChoreonoidBody
 format_version: 2.0
 angle_unit: degree
